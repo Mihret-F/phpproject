@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/ho.css">
+</head>
+<body>
+<header>
+  <h1>Welcome to DM Referral Hospital Patient Management System</h1>
+  <nav>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Home</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="row">
+    <div class="col-4">
+      <section class="hospital-image">
+        <img src="image/hosp1.jpeg" alt="hospital-image" height="100%" width="100%">
+      </section>
+    </div>
+    <div class="col-4">
+      <section class="hospital-info">
+        <h2>About DM Referral Hospital</h2>
+        <p>Our hospital patient management system is a comprehensive software solution 
+            designed to streamline the entire process of patient care, from admission to 
+            discharge. With our system, hospitals can easily manage patient information, 
+            including medical history, diagnosis, and medication records, 
+            all in one place.
+            <br>
+            Our patient management system is highly customizable, and we work closely with 
+            hospitals to tailor the solution to their specific needs. With our system, 
+            hospitals can improve efficiency, reduce errors, and deliver high-quality care to 
+            patients.</p>
+      </section>
+    </div>
+    <div class="col-4">
+      <section class="login-form">
+        <h2>Login</h2>
+        <form action="login.php" method="post" onsubmit="return validateForm()">
+            <label for="user-type">Select user type:</label>
+            <select id="user-type" name="user-type">
+                <option value="">-- Select User Type --</option>
+                <option value="doctor">Doctor</option>
+                <option value="LabTech">Lab Lechnician</option>
+                <option value="reception">Receptionist</option>
+                <option value="phy_assist">Physician Assistant</option>
+            </select>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"> </br>
+            <input type="submit" value="Log In">
+        </form>
+      </section>
+    </div>
+  </div>
+</main>
+<footer>
+  <p>&copy; 2023 DM Referral Hospital. All rights reserved.</p>
+</footer>
+<script src="js/home.js"></script>
+</body>
+</html>

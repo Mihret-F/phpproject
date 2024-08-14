@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    flex-basis: calc(33.33% - 20px);
+    padding: 0 10px;
+}
+header {
+    height: 130px;
+    background-color: #039;
+    text-align: center;
+    color: white;
+}
+header h1 {
+    padding-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+header ul li {
+    list-style-type: none;
+    text-align: right;
+    float: right;
+    padding: 10px;
+    text-transform: uppercase;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 50px 0;
+}
+
+section.hospital-image {
+    height: 300px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+section.hospital-info {
+    text-align: justify;
+    justify-content: center;
+    margin-top: 50px;
+}
+.login-form {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(12, 138, 228, 0.1);
+    border-radius: 5px;
+    margin-top: 50px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333333;
+}
+#user-type {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border-color: #D3D3D3;
+    font-size: 16px;
+}
+#username,
+#password {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border-color: #D3D3D3;
+    font-size: 16px;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+section.login-form input[type="submit"]:hover {
+  background-color: #039;
+}
+
+footer {
+    height:130px;
+    background-color: #039;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
